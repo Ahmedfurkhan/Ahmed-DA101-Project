@@ -1,159 +1,148 @@
-# E-Commerce and Data Analysis Project
+# Data Analytics 101: E-commerce Performance Analysis
 
-This repository contains two Jupyter Notebooks (`DA101.ipynb` and `Dataanalysis.ipynb`) that provide exploratory data analysis (EDA), insights, and visualizations for different datasets. Each notebook is structured for reproducibility, with well-documented code and outputs.
+## Capstone Project Assignment Guide
+
+This repository documents the E-commerce Performance Analysis capstone project, aiming to help an e-commerce marketplace understand customer behavior, sales patterns, and develop predictive models for future sales. Below, you'll find an overview of the project structure and phases.
 
 ---
 
-## Notebook 1: E-Commerce Data Analysis (`DA101.ipynb`)
+## Project Overview
 
-### Overview
+The project involves analyzing an e-commerce public dataset containing:
 
-This notebook analyzes datasets related to an e-commerce platform, focusing on customer orders, geographic data, product information, and seller details.
+- Customer information
+- Order details and status
+- Product information
+- Payment details
+- Review ratings
+- Geographic data
 
-### Objectives
+The analysis is structured into four phases:
 
-1. **Dataset Exploration**:
-   - Load and examine multiple datasets.
-   - Understand the structure, data types, and statistical summaries.
-   
-### Requirements
+1. Understanding and Preparing Your Data
+2. Data Cleaning and Feature Engineering
+3. Exploratory Data Analysis (EDA)
+4. Statistical Analysis and Predictive Modeling
 
-Install the following Python libraries:
+---
 
-- `pandas`
-- `numpy`
-- `matplotlib`
-- `seaborn`
-- `scipy`
+## Project Structure
 
-```bash
-   pip install pandas numpy matplotlib seaborn scipy
-```
+### Phase 1: Understanding and Preparing Your Data (Part 1)
 
-### File Structure
+#### Part A: Initial Data Exploration
+1. **Data Loading and Overview**:
+   - Load and examine the structure of dataset tables.
+   - Create a data dictionary.
+   - Document table relationships.
+   - File used: `Data Exploration.ipynb`
 
-- **Notebook**: `DA101.ipynb`
-- **Datasets**:
-  - `olist_orders_dataset.csv`
-  - `olist_customers_dataset.csv`
-  - `olist_geolocation_dataset.csv`
-  - `olist_order_items_dataset.csv`
-  - `olist_products_dataset.csv`
-  - `olist_sellers_dataset.csv`
-  - `olist_order_payments_dataset.csv`
-  - `olist_order_reviews_dataset.csv`
-  - `product_category_name_translation.csv`
+2. **Data Quality Assessment**:
+   - Identify missing values.
+   - Check for duplicates and outliers.
+   - Verify column data types.
+   - Document anomalies.
+   - File used: `Data Exploration.ipynb`
 
-### How to Use
+#### Part B: Data Integration
+1. **Planning Your Integration**:
+   - Select tables needed for analysis.
+   - Define join strategy and address potential challenges.
+   - File used: `Data Exploration.ipynb`
 
+2. **Creating Your Analytical Dataset**:
+   - Combine tables with appropriate joins.
+   - Verify accuracy and ensure no unintended data loss.
+   - File used: `Data Exploration.ipynb`
+
+### Phase 2: Data Cleaning and Feature Engineering (Part 2)
+
+1. **Data Cleaning Strategy**:
+   - Handle missing values, duplicates, and outliers.
+   - Convert data types as required.
+   - Document all decisions.
+   - File used: `DataCleaning.ipynb`
+
+2. **Feature Engineering**:
+   - Create time-based, customer-centric, product-based, and geographical features.
+   - Generate additional relevant features.
+   - File used: `DataCleaning.ipynb`
+
+3. **Data Validation**:
+   - Ensure integrity of the cleaned dataset.
+   - Verify correctness of engineered features.
+   - File used: `DataCleaning.ipynb`
+
+### Phase 3: Exploratory Data Analysis (Part 3)
+
+1. **Temporal Analysis**:
+   - Study daily, weekly, and monthly sales trends.
+   - Analyze delivery times and payment patterns.
+   - File used: `Exploratory Data Analysis.ipynb`
+
+2. **Customer Analysis**:
+   - Examine geographic distribution, spending habits, and review impacts.
+   - File used: `Exploratory Data Analysis.ipynb`
+
+3. **Product Analysis**:
+   - Identify top-selling products/categories.
+   - Analyze price distributions and product return rates.
+   - File used: `Exploratory Data Analysis.ipynb`
+
+### Phase 4: Statistical Analysis and Modeling (Part 4)
+
+1. **Predictive Modeling**:
+   - Formulate hypotheses and select target variables.
+   - Build and evaluate regression models.
+   - Document model development process.
+   - File used: `Prediction Analysis.ipynb`
+
+2. **Model Evaluation**:
+   - Assess assumptions and interpret key metrics (R², RMSE, MAE).
+   - Validate model performance on test data.
+   - File used: `Prediction Analysis.ipynb`
+
+---
+
+## Getting Started
+
+### Prerequisites
+- Python 3.7 or above.
+- Install required packages:
+  ```bash
+  pip install -r requirements.txt
+  ```
+
+### Running the Project
 1. Clone the repository:
-
    ```bash
-   git clone <repository-url>
+   git clone <repository_url>
+   cd <repository_directory>
    ```
-
-2. Navigate to the project directory:
-
+2. Launch Jupyter Notebook:
    ```bash
-   cd <repository-folder>
+   jupyter notebook
    ```
-
-3. Open the notebook:
-
-   ```bash
-   jupyter notebook DA101.ipynb
-   ```
-
-4. Run all cells sequentially to reproduce the analysis.
-
-### Key Highlights
-
-- **Data Exploration**:
-  - Metadata and statistical summaries for each dataset.
-  - Data cleaning and handling missing values.
-
-- **Visualizations**:
-  - Order statuses, payment types, and geographic distribution.
-
-- **Business Recommendations**:
-  - Insights for delivery optimization and product performance enhancement.
+3. Execute notebooks in the following order:
+   - `Data Exploration.ipynb`
+   - `DataCleaning.ipynb`
+   - `Exploratory Data Analysis.ipynb`
+   - `Prediction Analysis.ipynb`
 
 ---
 
-## Notebook 2: Data Analysis (`Dataanalysis.ipynb`)
+## Dataset Description
 
-### Overview
+### Files
+The dataset includes CSV files with customer, order, product, payment, review, and geographic data.
 
-This notebook focuses on exploratory data analysis, visualization, and insights derived from a single dataset (`Final_dataset.csv`).
-
-### Objectives
-
-1. **Dataset Structure**:
-   - Preview columns and data types.
-   - Analyze summary statistics to identify trends and anomalies.
-
-2. **Exploratory Data Analysis (EDA)**:
-   - Visualize distributions and relationships.
-   - Compute correlations and analyze patterns.
-
-3. **Generate Insights**:
-   - Highlight data patterns and trends for informed business decisions.
-
-### Requirements
-
-Install the following Python libraries:
-
-- `pandas`
-- `numpy`
-- `matplotlib`
-- `seaborn`
-
-```bash
-pip install pandas numpy matplotlib seaborn
-```
-
-### File Structure
-
-- **Notebook**: `Dataanalysis.ipynb`
-- **Dataset**: `Final_dataset.csv`
-
-### How to Use
-
-1. Clone this repository:
-
-   ```bash
-   git clone <repository-url>
-   ```
-
-2. Navigate to the project directory:
-
-   ```bash
-   cd <repository-folder>
-   ```
-
-3. Open the notebook:
-
-   ```bash
-   jupyter notebook Dataanalysis.ipynb
-   ```
-
-4. Run all cells sequentially to reproduce the analysis.
-
-### Key Highlights
-
-- **Data Overview**:
-  - Column summaries and initial previews.
-
-- **Visualizations**:
-  - Distribution plots and scatter plots.
-  - Correlation matrix to explore variable relationships.
-
-- **Insights**:
-  - Business implications based on trends and outliers.
+### Relationships
+Documented relationships between tables:
+- Customer ↔ Orders
+- Orders ↔ Products
+- Orders ↔ Payments
+- Products ↔ Reviews
 
 ---
 
-## Contributions
-
-Contributions are welcome! Please fork the repository, create a feature branch, and submit a pull request with detailed explanations of your changes.
-
+Feel free to reach out for any questions or suggestions!
