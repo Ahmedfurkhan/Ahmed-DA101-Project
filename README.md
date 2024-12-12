@@ -116,8 +116,8 @@ The analysis is structured into four phases:
 ### Running the Project
 1. Clone the repository:
    ```bash
-   git clone <repository_url>
-   cd <repository_directory>
+   git clone https://github.com/Ahmedfurkhan/DA101-Project.git
+   cd DA101-Project
    ```
 2. Launch Jupyter Notebook:
    ```bash
